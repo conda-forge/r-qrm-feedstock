@@ -1,4 +1,4 @@
-{% set version = "0.4-20" %}
+{% set version = "0.4-31" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/QRM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/QRM/QRM_{{ version }}.tar.gz
-  sha256: 987158b228f0b09f03fac99c8e857ccaa232f1172b81511072c068b528e7d8c8
+  sha256: 4ad8bd22eff5048d4718d598120cc46879866b818d006f3b915b24effe98be95
 
 build:
   merge_build_host: True  # [win]
