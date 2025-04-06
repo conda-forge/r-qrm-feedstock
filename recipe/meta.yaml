@@ -1,4 +1,4 @@
-{% set version = "0.4-31" %}
+{% set version = "0.4-35" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/QRM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/QRM/QRM_{{ version }}.tar.gz
-  sha256: 4ad8bd22eff5048d4718d598120cc46879866b818d006f3b915b24effe98be95
+  sha256: 327ff1acb478c0a47554c930ffd5c44ab9150e1617aea00b99f8b450c8956415
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -59,8 +59,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=QRM
   license: GPL (>= 2)
-  summary: "Accompanying package to the book Quantitative Risk Management: Concepts, Techniques
-    and Tools by Alexander J. McNeil, R\xC3\xBCdiger Frey, and Paul Embrechts."
+  summary: "Accompanying package to the book Quantitative Risk Management: Concepts, Techniques and Tools by Alexander J. McNeil, RÃ¼diger Frey, and Paul Embrechts."
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
